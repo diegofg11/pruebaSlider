@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox alignment="BOTTOM_CENTER" prefHeight="362.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegofg11.Controlador">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Rectangle fx:id="cuadroColor" arcWidth="5.0" fill="BLUE" height="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="257.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" />
+         </VBox.margin></HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="646.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER" text="Despalaza los sliders para cambiar el color" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="22.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="74.0" prefWidth="344.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="78.0">
+                           <children>
+                              <Label fx:id="rojo" alignment="CENTER" contentDisplay="CENTER" text="Rojo:" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="279.0">
+                           <children>
+                              <Slider fx:id="sliderRojo" majorTickUnit="85.0" max="255.0" prefHeight="14.0" prefWidth="220.0" showTickLabels="true" showTickMarks="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="74.0" prefWidth="344.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="78.0">
+               <children>
+                  <Label fx:id="verde" text="Verde:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="273.0">
+               <children>
+                  <Slider fx:id="sliderVerde" majorTickUnit="85.0" max="255.0" prefHeight="14.0" prefWidth="220.0" showTickLabels="true" showTickMarks="true" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="74.0" prefWidth="344.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="78.0">
+               <children>
+                  <Label fx:id="azul" text="Azul:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="279.0">
+               <children>
+                  <Slider fx:id="sliderAzul" majorTickUnit="85.0" max="255.0" prefHeight="14.0" prefWidth="220.0" showTickLabels="true" showTickMarks="true" value="255.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
