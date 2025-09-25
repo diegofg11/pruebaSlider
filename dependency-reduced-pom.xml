@@ -36,6 +36,14 @@
         </executions>
       </plugin>
       <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>22</source>
+          <target>22</target>
+        </configuration>
+      </plugin>
+      <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.3.0</version>
         <configuration>
@@ -43,7 +51,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>libs/</classpathPrefix>
-              <mainClass>org.diegofg11.MainApp</mainClass>
+              <mainClass>org.diegofg11.Lanzador</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -67,10 +75,7 @@
     </plugins>
   </build>
   <properties>
+    <mainClass>org.diegofg11.Lanzador</mainClass>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <javafx.version>23.0.2</javafx.version>
-    <maven.compiler.target>23</maven.compiler.target>
-    <mainClass>org.diegofg11.MainApp</mainClass>
-    <maven.compiler.source>23</maven.compiler.source>
   </properties>
 </project>

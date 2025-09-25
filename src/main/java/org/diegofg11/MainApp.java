@@ -16,20 +16,20 @@ public class MainApp extends Application {
      */
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/colores.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/diegofg11/fxml/colores.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setScene(scene);
         stage.show();
     }
-
-    /**
-     * Método principal del programa. Llama a {@link #launch(String...)} para iniciar la aplicación JavaFX.
-     *
-     * @param args Argumentos de línea de comandos (no utilizados)
-     */
-    public static void main(String[] args) {
-        launch();
-    }
+//
+//    /**
+//     * Método principal del programa. Llama a {@link #launch(String...)} para iniciar la aplicación JavaFX.
+//     *
+//     * @param args Argumentos de línea de comandos (no utilizados)
+//     */
+//    public static void main(String[] args) {
+//        launch();
+//    }
 }
 
 
